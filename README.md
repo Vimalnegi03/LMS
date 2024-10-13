@@ -18,7 +18,7 @@ The Online Learning Management System (LMS) is an advanced platform designed to 
 - **Frontend:** React.js, Tailwind CSS, Daisy UI
 - **Backend:** Node.js, Express
 - **Database:** MongoDB
-- **Payment Gateway:** [Specify the payment gateway used, e.g., Stripe, PayPal]
+- **Payment Gateway:** [PayPal]
 - **Real-time Communication:** Socket.io
 
 ## Installation
