@@ -16,7 +16,7 @@ app.use(express.json())
 app.use(cookieParser())
 app.use(urlencoded({extended:true}))
 app.use(cors({
-    origin: process.env.FRONT_END_URL, 
+    origin: "https://lms-v1wq.onrender.com", 
     credentials: true // Allow cookies and other credentials
 }));
 app.use(morgan('dev'))
