@@ -2,7 +2,7 @@ import AppError from "../utils/err_util.js";
 import JWT from 'jsonwebtoken'
 import User from "../models/userModel.js";
 export const isLoggedIn=async(req,res,next)=>{
-    const token=(req.cookies&&req.cookies.token)||NULL;
+    const token=(req.cookies&&req.cookies.token);
     try{
     if(!token)
     {
