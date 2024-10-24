@@ -15,11 +15,7 @@ const app=express()
 app.use(express.json())
 app.use(cookieParser())
 app.use(urlencoded({extended:true}))
-app.use(cors({
-  origin: 'https://lms-v1wq.onrender.com', // Allow only your frontend origin
-  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Specify the allowed methods
-  credentials: true // Enable this if you are using cookies
-}));
+app.use(cors());
 app.use(morgan('dev'))
 app.use('/api/v1/user',userRoutes)
 app.use('/api/v1/courses',courseRoutes)
